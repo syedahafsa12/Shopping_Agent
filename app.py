@@ -28,7 +28,7 @@ if not api_key:
     st.stop()
 
 # Instantiate the model with your API key
-model = ChatGoogleGenerativeAI(api_key=api_key, model="gemini-2.0-flash")
+model = ChatGoogleGenerativeAI(api_key=api_key, model="gemini-1.5-flash")
 
 # ---------------------------
 # Import mock data
@@ -260,7 +260,7 @@ def agent(messages, previous):
 # ---------------------------
 # STREAMLIT UI (Dark Theme)
 # ---------------------------
-st.set_page_config(page_title="AI Shopping Assistant", layout="wide")
+st.set_page_config(page_title="AI Shopping Agent", layout="wide")
 st.title("🛍 AI Shopping Assistant")
 
 # Custom CSS for a modern dark theme
