@@ -211,7 +211,7 @@ tools_by_name = {tool.name: tool for tool in tools}
 system_prompt = """You are a concise, friendly shopping assistant.
 You can call various tools to help the user. 
 If the user says something like "confirm order for Headphones B ($299)", 
-you should ask user for details for example: address="123 Main St", phone_no=123456, card_no=12345678 and then continue to checkout tool
+you should ask user for details for example: address="123 Main St", phone_no=123456, account number and then continue to checkout tool
 and return the checkout result. and give shipping result that it will ship in x days.
 If the user says "I want to buy X", you can call recommend_products.
 Otherwise, respond in a helpful, concise way.
