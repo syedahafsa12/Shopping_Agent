@@ -279,10 +279,10 @@ st.markdown("""
             padding: 10px;
             border-radius: 10px;
             margin: 10px 0;
-            color: #ECDCBF;
+            color: #EEE;
         }
         .assistant-msg {
-            background-color: #A31D1D;
+            background-color: #444;
             padding: 10px;
             border-radius: 10px;
             margin: 10px 0;
