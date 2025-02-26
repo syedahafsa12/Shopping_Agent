@@ -260,7 +260,7 @@ def agent(messages, previous):
 # ---------------------------
 # STREAMLIT UI (Dark Theme)
 # ---------------------------
-st.set_page_config(page_title="AI Shopping Assistant", layout="wide")
+st.set_page_config(page_title="AI Shopping Agent", layout="wide")
 st.title("🛍 AI Shopping Assistant")
 
 # Custom CSS for a modern dark theme
