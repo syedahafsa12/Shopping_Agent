@@ -28,7 +28,7 @@ if not api_key:
     st.stop()
 
 # Instantiate the model with your API key
-model = ChatGoogleGenerativeAI(api_key=api_key, model="gemini-2.0-flash")
+model = ChatGoogleGenerativeAI(api_key=api_key, model="gemini-1.5-flash")
 
 # ---------------------------
 # Import mock data
