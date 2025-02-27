@@ -482,16 +482,16 @@ wheels = [
 
 [[package]]
 name = "langgraph"
-version = "0.2.75"
+version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
     { name = "langgraph-checkpoint" },
     { name = "langgraph-sdk" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/eb/27/a852dcf589d4b8915e03abb858266c49e6cee18139b43d9aca8304aa5c18/langgraph-0.2.75.tar.gz", hash = "sha256:f548509eba71282140a00bd97799fa6135bd9c8944144e4ccfbe2a6d64314218", size = 132978 }
+sdist = { url = "https://files.pythonhosted.org/packages/bd/43/17024871a4cc290090db7fc9b87bfd7329a5155ec6b4b5178db49fbf9be1/langgraph-0.3.0.tar.gz", hash = "sha256:9a288ba895dc76b09a9ba530ec384a5a24f3428a9e1f6ad56efba3fa8aa5b015", size = 113389 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/a6/75/21b5efe257e7b614181b40b565aeeffee55d92bdb92b312b56d0893c2c4f/langgraph-0.2.75-py3-none-any.whl", hash = "sha256:24d7637aa78cba20c6e32050ff441389c432be3dd4ef295b5a35d5f5839ad71b", size = 153670 },
+    { url = "https://files.pythonhosted.org/packages/d5/cd/8d8fb7678cd9ea5fc52cf198e7a8b215bb97efcfe6d38b13652302abcb90/langgraph-0.3.0-py3-none-any.whl", hash = "sha256:3b8c54fc58e8dc9d443347bfba488a8913c7139c3cbffb5b43555a55d59d455c", size = 130834 },
 ]
 
 [[package]]
@@ -518,27 +518,6 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/39/b2/a261cfbf91a4499396ba0993cf5601076301dd22883d3c0901e905253917/langgraph_sdk-0.1.53.tar.gz", hash = "sha256:12906ed965905fa27e0c28d9fa07dc6fd89e6895ff321ff049fdf3965d057cc4", size = 42369 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/fc/97/3492a07b454cc74bf49938e83f0a95c608a8bc5c3dda338091d3c66e3ec5/langgraph_sdk-0.1.53-py3-none-any.whl", hash = "sha256:4fab62caad73661ffe4c3ababedcd0d7bfaaba986bee4416b9c28948458a3af5", size = 45441 },
-]
-
-[[package]]
-name = "langgraph-shopping-agent"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "langchain-core" },
-    { name = "langchain-google-genai" },
-    { name = "langgraph" },
-    { name = "python-dotenv" },
-    { name = "streamlit" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "langchain-core", specifier = ">=0.3.40" },
-    { name = "langchain-google-genai", specifier = ">=2.0.11" },
-    { name = "langgraph", specifier = ">=0.2.75" },
-    { name = "python-dotenv", specifier = ">=1.0.1" },
-    { name = "streamlit", specifier = ">=1.42.2" },
 ]
 
 [[package]]
@@ -667,6 +646,27 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/7a/40/631c238f1f338eb09f4acb0f34ab5862c4e9d7eda11c1b685471a4c5ea37/msgpack-1.1.0-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:b4c01941fd2ff87c2a934ee6055bda4ed353a7846b8d4f341c428109e9fcde8c", size = 399082 },
     { url = "https://files.pythonhosted.org/packages/e9/1b/fa8a952be252a1555ed39f97c06778e3aeb9123aa4cccc0fd2acd0b4e315/msgpack-1.1.0-cp313-cp313-win32.whl", hash = "sha256:7c9a35ce2c2573bada929e0b7b3576de647b0defbd25f5139dcdaba0ae35a4cc", size = 69037 },
     { url = "https://files.pythonhosted.org/packages/b6/bc/8bd826dd03e022153bfa1766dcdec4976d6c818865ed54223d71f07862b3/msgpack-1.1.0-cp313-cp313-win_amd64.whl", hash = "sha256:bce7d9e614a04d0883af0b3d4d501171fbfca038f12c77fa838d9f198147a23f", size = 75140 },
+]
+
+[[package]]
+name = "myproject"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "langchain-core" },
+    { name = "langchain-google-genai" },
+    { name = "langgraph" },
+    { name = "python-dotenv" },
+    { name = "streamlit" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "langchain-core", specifier = ">=0.3.40" },
+    { name = "langchain-google-genai", specifier = ">=2.0.11" },
+    { name = "langgraph", specifier = ">=0.3.0" },
+    { name = "python-dotenv", specifier = ">=1.0.1" },
+    { name = "streamlit", specifier = ">=1.42.2" },
 ]
 
 [[package]]

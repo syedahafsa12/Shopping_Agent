@@ -1,0 +1,25 @@
+[project]
+name = "myproject"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "syedahafsa12", email = "syedahafsa772@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain-core>=0.3.40",
+    "langchain-google-genai>=2.0.11",
+    "langgraph>=0.3.0",
+    "python-dotenv>=1.0.1",
+    "streamlit>=1.42.2",
+]
+
+[project.scripts]
+myproject = "myproject:app"
+hafsa = "myproject.app:main"
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
